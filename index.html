@@ -30,9 +30,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
 								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -42,55 +41,69 @@
 				<!-- Main -->
 					<div id="main">
 
+							<!-- About -->
+							<!-- <article id="about">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<h5>Hi there! I'm Ian Boyle. </h5>
+								<p> I am a software engineer that loves solving puzzles, math, and pretty much anything that requires critical thinking. I find motivation in finding problems and coming up with solutions. I am always on the hunt for a new challenge and the opportunity to fail and learn. </p>
+								
+								<p>
+								In my free time you'll find me somewhere outside, at the ice rink, or reading a good book - most likely one on history. I love to be active and enjoy golf, surfing, yoga, and hockey.</p>
+							</article> -->
 						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
+							<article id="about">
+								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>This is my Intro Page. Hey there,  I'm Ian, welcome to my website! Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<h5>Hi there! I'm Ian Boyle. </h5>
+								<p> I am a software engineer that loves solving puzzles, math, and pretty much anything that requires critical thinking. I find motivation in finding problems and coming up with solutions. I am always on the hunt for a new challenge and the opportunity to fail and learn. </p>
+								
+								<p>In my free time you'll find me somewhere outside, at the ice rink, or reading a good book - most likely one on history. I love to be active, travel, and enjoy golf, surfing, yoga, and hockey.</p>
+								
+								<p>By the way, check out my <a href="#work">awesome work</a>.</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>This is my work page. Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h5>Languages:</h5>
+								<p><ul>
+									<li>Javascript</li>
+									<li>Node</li>
+									<li>Ruby</li>
+								</ul></p>
+								<h5>A few of my projects:</h5>
+								<p><a href="https://github.com/ianrboyle/movie-app">Movie App</a> - a RESTful Rails app that houses movies, actors, genres and uses postgreSQL.</p>
+								<p><a href="https://github.com/ianrboyle/movie-app">A Different Project</a> - a different project that does different, cooler things.</p>
+								
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<h5>Hi there! I'm Ian Boyle. </h5>
-								<p> I am an aspiring software engineer. I love solving puzzles and anything that requires critical thinking. My favorite courses throughout my education have always been those that involved math. I am constantly looking to learn more and find new challenges. My biggest regret to date is not discovering programming sooner.</p>
-							</article>
+					
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
+								<!-- <form method="post" action="#"> -->
+									<!-- <div class="fields"> -->
+									<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkwvqjg" method="post">
+										<fieldset id="fs-frm-inputs">
+											<label for="full-name">Full Name</label>
+											<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+											<br>
+											<label for="email-address">Email Address</label>
+											<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+											<br>
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+											<textarea rows="5" name="message" id="message" placeholder="Type your message here." required=""></textarea>
+											<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+										</fieldset>
+										<br>
+										<input type="submit" value="Submit">
+									</form>
+									
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 									<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 									<li><a href="https://www.linkedin.com/in/ianrboyle/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/ianrboyle" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
