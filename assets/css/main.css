@@ -1659,3 +1659,8 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		iframe p {
+			text-align: center;
+			margin-right: 100px;
+		}
